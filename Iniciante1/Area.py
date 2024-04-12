@@ -1,0 +1,16 @@
+v1, v2, v3 = input().split()
+
+v1 = float(v1)
+v2 = float(v2)
+v3 = float(v3)
+triangulo = float((v1*v3)/2)
+circulo = float((v3**2)*3.14159)
+trapezio = float((1/2)*v3*(v1+v2))
+quadrado = float(v2**2)
+retangulo = float(v1*v2)
+
+print("TRIANGULO: %.3f"%triangulo)
+print("CIRCULO: %.3f"%circulo)
+print("TRAPEZIO: %.3f"%trapezio)
+print("QUADRADO: %.3f"%quadrado)
+print("RETANGULO: %.3f"%retangulo)
