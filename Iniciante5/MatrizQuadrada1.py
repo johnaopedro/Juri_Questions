@@ -13,11 +13,11 @@ while tamanho != 0:
 
     vetordematriz.append(matriz)
 
+    for i, linha in enumerate(matriz):
+        for j, elemento in enumerate(linha):
+            if j != len(linha) -1:
+                print('{: >3}'.format(elemento), end=' ')
+            else:
+                print('{: >3}'.format(elemento))
+    print()
     tamanho = int(input())
-
-for i, matriz in enumerate(vetordematriz):
-    for j, linha in enumerate(matriz):
-        print(' '.join(map(str, linha)))
-    if i != len(vetordematriz) - 1:
-        print()
-
