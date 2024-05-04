@@ -1,9 +1,8 @@
+import sys
 try:
-    with open("All_Juri_Questions/Iniciante5/entradas.txt", "r") as f:
         vetordematriz = []
-        while True:
-            tamanho = f.readline()
-            tamanho=int(tamanho)
+        for line in sys.stdin:
+            tamanho=int(line)
             if not tamanho:
                 break
             matriz = []
@@ -24,7 +23,5 @@ try:
                 for j, elemento in enumerate(linha):
                         print(elemento, end='')
                 print()
-except FileNotFoundError:
-    print()
-except ValueError:
-    print()
+except Exception as e:
+    print("Ocorreu um erro:", e)
